@@ -32,5 +32,7 @@ namespace Data.Models
 
         public System.Data.Entity.DbSet<Inventory> Inventories { get; set; }
         public DbSet<MasterList> Lists { get; set; }
+        public DbSet<MedicationList> MedList { get; set; }
+        public DbSet<UserTransactions> UserTransaction { get; set; }
     }
 }
