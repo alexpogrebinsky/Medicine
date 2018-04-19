@@ -107,9 +107,24 @@
     <Compile Include="Migrations\201804180411280_Five.Designer.cs">
       <DependentUpon>201804180411280_Five.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804191536227_Testing.cs" />
+    <Compile Include="Migrations\201804191536227_Testing.Designer.cs">
+      <DependentUpon>201804191536227_Testing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804191552514_Modelschanged01.cs" />
+    <Compile Include="Migrations\201804191552514_Modelschanged01.Designer.cs">
+      <DependentUpon>201804191552514_Modelschanged01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804191557304_ModelsUpdates.cs" />
+    <Compile Include="Migrations\201804191557304_ModelsUpdates.Designer.cs">
+      <DependentUpon>201804191557304_ModelsUpdates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804191607351_ConnectionSTringFix.cs" />
+    <Compile Include="Migrations\201804191607351_ConnectionSTringFix.Designer.cs">
+      <DependentUpon>201804191607351_ConnectionSTringFix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Context.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Inventory.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -135,6 +150,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804180411280_Five.resx">
       <DependentUpon>201804180411280_Five.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804191536227_Testing.resx">
+      <DependentUpon>201804191536227_Testing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804191552514_Modelschanged01.resx">
+      <DependentUpon>201804191552514_Modelschanged01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804191557304_ModelsUpdates.resx">
+      <DependentUpon>201804191557304_ModelsUpdates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804191607351_ConnectionSTringFix.resx">
+      <DependentUpon>201804191607351_ConnectionSTringFix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
