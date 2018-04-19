@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace Medicine.Models
+namespace Data.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
@@ -21,7 +21,7 @@ namespace Medicine.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("Context", throwIfV1Schema: false)
         {
         }
 
@@ -30,6 +30,7 @@ namespace Medicine.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<Data.Models.MasterList> MasterLists { get; set; }
+        public System.Data.Entity.DbSet<Inventory> Inventories { get; set; }
+        public DbSet<MasterList> Lists { get; set; }
     }
 }

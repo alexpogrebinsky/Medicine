@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Data.Models;
 
 namespace Medicine.Controllers
 {
@@ -10,6 +11,21 @@ namespace Medicine.Controllers
     {
         public ActionResult Index()
         {
+            return View();
+        }
+
+
+        public ActionResult MedicineList()
+        {
+            List<MasterList> MedicineList = new List<MasterList>();
+
+
+            return View(MedicineList);
+        }
+
+        public ActionResult CreateMedicine()
+        {
+
             return View();
         }
 
